@@ -12,7 +12,6 @@ def dfs(curr, end, mp, visited):
   sm = 0
   for neighbor in mp[curr]:
     sm += dfs(neighbor, end, mp, visited.copy())
-  
   return sm
 
 def main():
